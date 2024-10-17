@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Pelanggan</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+    <div class="Box">
+        <div class="sidebar">
+            <h1>TOKO</h1>
+            <div class="menu-item" onclick="location.href='Dashboard.html'">Dashboard</div>
+            <div class="menu-item" onclick="location.href='ManajemenBarang.html'">Manajemen Barang</div>
+            <div class="menu-item" onclick="location.href='ManajemenPelanggan.html'">Manajemen Pelanggan</div>
+            <div class="menu-item" onclick="location.href='Transaksi.html'">Transaksi</div>
+            <div class="menu-item" onclick="location.href='RiwayatTransaksi.html'">Riwayat Transaksi</div>
+            <div class="menu-item logout" onclick="location.href='../Login.html'">Log Out</div>
+        </div>
+
+        <div class="content">
+            <h2>Manajemen Pelanggan</h2>
+            <div class="form-container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="kode-pelanggan">Kode Pelanggan:</label>
+                            <input type="text" id="kode-pelanggan" name="kode-pelanggan">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="nama-pelanggan">Nama Pelanggan:</label>
+                            <input type="text" id="nama-pelanggan" name="nama-pelanggan">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="alamat">Alamat:</label>
+                            <input type="text" id="alamat" name="alamat">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="no-telepon">No. Telepon:</label>
+                            <input type="tel" id="no-telepon" name="no-telepon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Kode Pelanggan</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Alamat</th>
+                        <th>No. Telepon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data pelanggan akan ditampilkan di sini -->
+                </tbody>
+            </table>
+            
+            <div class="button-group">
+                <button class="btn btn-primary" id="btn-simpan">Simpan</button>
+                <button class="btn btn-secondary" id="btn-edit">Edit</button>
+                <button class="btn btn-danger" id="btn-hapus">Hapus</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

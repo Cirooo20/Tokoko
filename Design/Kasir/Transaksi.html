@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+
+    <div class="Box">
+        <div class="sidebar">
+            <h1>TOKO</h1>
+            <div class="menu-item" onclick="location.href='Dashboard.html'">Dashboard</div>
+            <div class="menu-item" onclick="location.href='ManajemenBarang.html'">Manajemen Barang</div>
+            <div class="menu-item" onclick="location.href='ManajemenPelanggan.html'">Manajemen Pelanggan</div>
+            <div class="menu-item" onclick="location.href='Transaksi.html'">Transaksi</div>
+            <div class="menu-item" onclick="location.href='RiwayatTransaksi.html'">Riwayat Transaksi</div>
+            <div class="menu-item logout" onclick="location.href='../Login.html'">Log Out</div>
+        </div>
+
+        <div class="content">
+            <h2>Transaksi</h2>
+            <div class="form-container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="kode-transaksi">Kode Transaksi:</label>
+                            <input type="text" id="kode-transaksi" name="kode-transaksi">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="tanggal-transaksi">Tanggal Transaksi:</label>
+                            <input type="date" id="tanggal-transaksi" name="tanggal-transaksi">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="kode-pelanggan">Kode Pelanggan:</label>
+                            <input type="text" id="kode-pelanggan" name="kode-pelanggan">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" name="nama">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-Barang">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label for="kode-barang">Kode Barang:</label>
+                            <input type="text" id="kode-barang" name="kode-barang">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label for="nama-barang">Nama Barang:</label>
+                            <input type="text" id="nama-barang" name="nama-barang">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label for="harga-barang">Harga Barang:</label>
+                            <input type="number" id="harga-barang" name="harga-barang">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label for="jumlah">Jumlah:</label>
+                            <input type="number" id="jumlah" name="jumlah">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>No Transaksi</th>
+                        <th>ID Barang</th>
+                        <th>Nama barang</th>
+                        <th>Harga Barang</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data transaksi akan ditambahkan di sini secara dinamis -->
+                </tbody>
+            </table>
+
+            <div class="row-pembayaran">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="sub-total">Sub Total:</label>
+                        <input type="number" id="sub-total" name="sub-total" readonly>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="pembayaran">Pembayaran:</label>
+                        <input type="number" id="pembayaran" name="pembayaran">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="kembalian">Kembalian:</label>
+                        <input type="number" id="kembalian" name="kembalian" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-primary" id="btn-simpan">Simpan</button>
+                <button class="btn btn-secondary" id="btn-tambah-barang">Tambah Barang</button>
+                <button class="btn btn-danger" id="btn-batal">Batal</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

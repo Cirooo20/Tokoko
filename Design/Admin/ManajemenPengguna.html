@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Pengguna</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+</head>
+
+<body>
+    <div class="Box">
+        <div class="sidebar">
+            <h1>TOKO</h1>
+            <div class="menu-item" onclick="location.href='Dashboard.html'">Dashboard</div>
+            <div class="menu-item" onclick="location.href='ManajemenBarang.html'">Manajemen Barang</div>
+            <div class="menu-item" onclick="location.href='ManajemenPelanggan.html'">Manajemen Pelanggan</div>
+            <div class="menu-item" onclick="location.href='Transaksi.html'">Transaksi</div>
+            <div class="menu-item" onclick="location.href='RiwayatTransaksi.html'">Riwayat Transaksi</div>
+            <div class="menu-item" onclick="location.href='LaporanHarian.html'">Laporan Harian</div>
+            <div class="menu-item" onclick="location.href='ManajemenPengguna.html'">Manajemen Pengguna</div>
+            <div class="menu-item logout" onclick="location.href='../Login.html'">Log Out</div>
+        </div>
+
+        <div class="content">
+            <h2>Manajemen Pengguna</h2>
+            <div class="form-container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="kode-admin">Kode Admin:</label>
+                            <input type="text" id="kode-admin" name="kode-admin">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="status">Status:</label>
+                            <input type="text" id="status" name="status">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Kode Admin</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data pengguna akan ditambahkan di sini secara dinamis -->
+                </tbody>
+            </table>
+
+            <div class="button-group">
+                <button class="btn btn-primary" id="simpan">Simpan</button>
+                <button class="btn btn-secondary" id="edit">Edit</button>
+                <button class="btn btn-danger" id="hapus">Hapus</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
