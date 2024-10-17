@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #ffffff;
+        }
+        .container {
+            background-color: rgba(44, 44, 44, 0.8);
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            text-align: center;
+            max-width: 80%;
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 30px;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        p {
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .login-btn {
+            background-color: #3a7a3d;
+            color: white;
+            padding: 20px 30px;
+            margin: 15px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 2em;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .login-btn:hover {
+            background-color: #2c5c2e;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang</h1>
+        <p>Kami sangat senang melihat Anda di sini hari ini!</p>
+        <p>Silakan masuk untuk melanjutkan perjalanan Anda bersama kami.</p>
+        <p>Semoga hari Anda penuh kebahagiaan dan kesuksesan!</p>
+        <button class="login-btn" onclick="location.href='Login.html'">Masuk</button>
+    </div>
+</body>
+</html>
